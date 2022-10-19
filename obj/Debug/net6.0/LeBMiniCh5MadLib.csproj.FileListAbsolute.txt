@@ -1,0 +1,15 @@
+/Users/brandonle/Desktop/CODESTACK/LevelOne/October/Week1/LeBMiniCh5MadLib/bin/Debug/net6.0/LeBMiniCh5MadLib
+/Users/brandonle/Desktop/CODESTACK/LevelOne/October/Week1/LeBMiniCh5MadLib/bin/Debug/net6.0/LeBMiniCh5MadLib.deps.json
+/Users/brandonle/Desktop/CODESTACK/LevelOne/October/Week1/LeBMiniCh5MadLib/bin/Debug/net6.0/LeBMiniCh5MadLib.runtimeconfig.json
+/Users/brandonle/Desktop/CODESTACK/LevelOne/October/Week1/LeBMiniCh5MadLib/bin/Debug/net6.0/LeBMiniCh5MadLib.dll
+/Users/brandonle/Desktop/CODESTACK/LevelOne/October/Week1/LeBMiniCh5MadLib/bin/Debug/net6.0/LeBMiniCh5MadLib.pdb
+/Users/brandonle/Desktop/CODESTACK/LevelOne/October/Week1/LeBMiniCh5MadLib/obj/Debug/net6.0/LeBMiniCh5MadLib.csproj.AssemblyReference.cache
+/Users/brandonle/Desktop/CODESTACK/LevelOne/October/Week1/LeBMiniCh5MadLib/obj/Debug/net6.0/LeBMiniCh5MadLib.GeneratedMSBuildEditorConfig.editorconfig
+/Users/brandonle/Desktop/CODESTACK/LevelOne/October/Week1/LeBMiniCh5MadLib/obj/Debug/net6.0/LeBMiniCh5MadLib.AssemblyInfoInputs.cache
+/Users/brandonle/Desktop/CODESTACK/LevelOne/October/Week1/LeBMiniCh5MadLib/obj/Debug/net6.0/LeBMiniCh5MadLib.AssemblyInfo.cs
+/Users/brandonle/Desktop/CODESTACK/LevelOne/October/Week1/LeBMiniCh5MadLib/obj/Debug/net6.0/LeBMiniCh5MadLib.csproj.CoreCompileInputs.cache
+/Users/brandonle/Desktop/CODESTACK/LevelOne/October/Week1/LeBMiniCh5MadLib/obj/Debug/net6.0/LeBMiniCh5MadLib.dll
+/Users/brandonle/Desktop/CODESTACK/LevelOne/October/Week1/LeBMiniCh5MadLib/obj/Debug/net6.0/refint/LeBMiniCh5MadLib.dll
+/Users/brandonle/Desktop/CODESTACK/LevelOne/October/Week1/LeBMiniCh5MadLib/obj/Debug/net6.0/LeBMiniCh5MadLib.pdb
+/Users/brandonle/Desktop/CODESTACK/LevelOne/October/Week1/LeBMiniCh5MadLib/obj/Debug/net6.0/LeBMiniCh5MadLib.genruntimeconfig.cache
+/Users/brandonle/Desktop/CODESTACK/LevelOne/October/Week1/LeBMiniCh5MadLib/obj/Debug/net6.0/ref/LeBMiniCh5MadLib.dll
