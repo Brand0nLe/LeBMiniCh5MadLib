@@ -66,9 +66,12 @@ while (playAgain == true)
     string lastInput = Console.ReadLine().ToUpper();
     if (lastInput == "NO")
     {
+        Console.WriteLine("So sad to see you go! Come back when you want to do some more mad libs :)");
         playAgain = false;
-    }else
+    }
+    if (lastInput =="YES")
         {
+            playAgain = true;
             Console.WriteLine("Oh you wanna do more mad libs? Nice! Let's do it.");
         }
 
