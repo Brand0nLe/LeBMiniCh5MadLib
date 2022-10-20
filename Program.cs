@@ -1,46 +1,111 @@
-﻿//Cuong Brandon Le
-//10-18-22
+﻿//Brandon Le
+//10-20-22
 //Mini Challenge 5 - Mad Lib
-
+//Project will save 10 user inputs as strings and print them out into a mad lib story. 
+//The user has the option to play again or end.
 
 //need data validation
 
 
 Console.Clear();
 
+bool canParse = true;
 bool playAgain = true;
+int validNum;
 
 while (playAgain == true)
 {
     Console.Write("Please enter a name: ");
     string nameOne = Console.ReadLine();
+    canParse = Int32.TryParse(nameOne, out validNum);
+    if(canParse == true)
+    {
+        Console.WriteLine("INVALID ENTRY. Try again:");
+        nameOne = Console.ReadLine();
+    }
+
 
     Console.Write("Okay another name: ");
     string nameTwo = Console.ReadLine();
+    canParse = Int32.TryParse(nameTwo, out validNum);
+    if(canParse == true)
+    {
+        Console.WriteLine("INVALID ENTRY. Try again:");
+        nameTwo = Console.ReadLine();
+    }
 
     Console.Write("What's something that tastes yummy? ");
     string yummyFlavor = Console.ReadLine();
+    canParse = Int32.TryParse(yummyFlavor, out validNum);
+    if(canParse == true)
+    {
+        Console.WriteLine("INVALID ENTRY. Try again:");
+        yummyFlavor = Console.ReadLine();
+    }
 
     Console.Write("Okay how about something that tastes GROSS then? ");
     string nastyFlavor = Console.ReadLine();
+    canParse = Int32.TryParse(nastyFlavor, out validNum);
+    if(canParse == true)
+    {
+        Console.WriteLine("INVALID ENTRY. Try again:");
+        nastyFlavor = Console.ReadLine();
+    }
 
     Console.Write("Okay gimme a number: ");
     string numberOne = Console.ReadLine();
+    canParse = Int32.TryParse(numberOne, out validNum);
+    if(canParse == false)
+    {
+        Console.WriteLine("INVALID ENTRY. Use a number:");
+        numberOne = Console.ReadLine();
+    }
 
     Console.Write("What's your favorite animal? ");
     string animal = Console.ReadLine();
+    canParse = Int32.TryParse(animal, out validNum);
+    if(canParse == true)
+    {
+        Console.WriteLine("INVALID ENTRY. Try again:");
+        animal = Console.ReadLine();
+    }
 
     Console.Write("Hmmm what's a good color? ");
     string color = Console.ReadLine();
+    canParse = Int32.TryParse(color, out validNum);
+    if(canParse == true)
+    {
+        Console.WriteLine("INVALID ENTRY. Try again:");
+        color = Console.ReadLine();
+    }
 
     Console.Write("Time for another number: ");
     string numberTwo = Console.ReadLine();
+    canParse = Int32.TryParse(numberTwo, out validNum);
+    if(canParse == false)
+    {
+        Console.WriteLine("INVALID ENTRY. Use a number:");
+        numberTwo = Console.ReadLine();
+    }
 
     Console.Write("Okay we're almost done... give me an emotion: ");
     string emotion = Console.ReadLine();
+    canParse = Int32.TryParse(emotion, out validNum);
+    if(canParse == true)
+    {
+        Console.WriteLine("INVALID ENTRY. Try again:");
+        emotion = Console.ReadLine();
+    }
 
     Console.Write("Okay last one! Let's end it with another number: ");
     string numberThree = Console.ReadLine();
+    canParse = Int32.TryParse(numberThree, out validNum);
+    if(canParse == false)
+    {
+        Console.WriteLine("INVALID ENTRY. Use a number:");
+        numberThree = Console.ReadLine();
+    }
+
 
 
 
@@ -64,12 +129,17 @@ while (playAgain == true)
     Console.WriteLine("------------------------------------------------------------\n");
     Console.WriteLine("Wasn't that a bunch of fun?! Do you wanna play again? (YES/NO)");
     string lastInput = Console.ReadLine().ToUpper();
+    if (lastInput != "YES" && lastInput != "NO")
+    {
+        Console.WriteLine("INVALID ENTRY! PLEASE CHOOSE YES OR NO.");
+        lastInput = Console.ReadLine().ToUpper();
+    }
     if (lastInput == "NO")
     {
         Console.WriteLine("So sad to see you go! Come back when you want to do some more mad libs :)");
         playAgain = false;
     }
-    if (lastInput =="YES")
+    if (lastInput == "YES")
         {
             playAgain = true;
             Console.WriteLine("Oh you wanna do more mad libs? Nice! Let's do it.");
