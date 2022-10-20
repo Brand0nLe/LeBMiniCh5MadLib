@@ -16,92 +16,103 @@ while (playAgain == true)
     Console.Write("Please enter a name: ");
     string nameOne = Console.ReadLine();
     canParse = Int32.TryParse(nameOne, out validNum);
-    if(canParse == true)
+    while(canParse == true)
     {
-        Console.WriteLine("INVALID ENTRY. Try again:");
+        Console.WriteLine("INVALID ENTRY. Please enter a name:");
         nameOne = Console.ReadLine();
+        canParse = Int32.TryParse(nameOne, out validNum);
     }
 
 
     Console.Write("Okay another name: ");
     string nameTwo = Console.ReadLine();
     canParse = Int32.TryParse(nameTwo, out validNum);
-    if(canParse == true)
+    while(canParse == true)
     {
-        Console.WriteLine("INVALID ENTRY. Try again:");
+        Console.WriteLine("INVALID ENTRY. Please enter another name:");
         nameTwo = Console.ReadLine();
+        canParse = Int32.TryParse(nameTwo, out validNum);
     }
 
     Console.Write("What's something that tastes yummy? ");
     string yummyFlavor = Console.ReadLine();
     canParse = Int32.TryParse(yummyFlavor, out validNum);
-    if(canParse == true)
+    while(canParse == true)
     {
-        Console.WriteLine("INVALID ENTRY. Try again:");
+        Console.WriteLine("INVALID ENTRY. Enter a yummy taste:");
         yummyFlavor = Console.ReadLine();
+        canParse = Int32.TryParse(yummyFlavor, out validNum);
     }
 
     Console.Write("Okay how about something that tastes GROSS then? ");
     string nastyFlavor = Console.ReadLine();
     canParse = Int32.TryParse(nastyFlavor, out validNum);
-    if(canParse == true)
+    while(canParse == true)
     {
-        Console.WriteLine("INVALID ENTRY. Try again:");
+        Console.WriteLine("INVALID ENTRY. Enter a gross flavor:");
         nastyFlavor = Console.ReadLine();
+        canParse = Int32.TryParse(nastyFlavor, out validNum);
     }
 
     Console.Write("Okay gimme a number: ");
     string numberOne = Console.ReadLine();
     canParse = Int32.TryParse(numberOne, out validNum);
-    if(canParse == false)
+    while(canParse == false)
     {
         Console.WriteLine("INVALID ENTRY. Use a number:");
         numberOne = Console.ReadLine();
+        canParse = Int32.TryParse(numberOne, out validNum);
     }
 
     Console.Write("What's your favorite animal? ");
     string animal = Console.ReadLine();
     canParse = Int32.TryParse(animal, out validNum);
-    if(canParse == true)
+    while(canParse == true)
     {
-        Console.WriteLine("INVALID ENTRY. Try again:");
+        Console.WriteLine("INVALID ENTRY. Please enter an animal:");
         animal = Console.ReadLine();
+        canParse = Int32.TryParse(animal, out validNum);
     }
 
     Console.Write("Hmmm what's a good color? ");
     string color = Console.ReadLine();
     canParse = Int32.TryParse(color, out validNum);
-    if(canParse == true)
+    while(canParse == true)
     {
-        Console.WriteLine("INVALID ENTRY. Try again:");
+        Console.WriteLine("INVALID ENTRY. Enter a color:");
         color = Console.ReadLine();
+        canParse = Int32.TryParse(color, out validNum);
+
     }
 
     Console.Write("Time for another number: ");
     string numberTwo = Console.ReadLine();
     canParse = Int32.TryParse(numberTwo, out validNum);
-    if(canParse == false)
+    while(canParse == false)
     {
         Console.WriteLine("INVALID ENTRY. Use a number:");
         numberTwo = Console.ReadLine();
+        canParse = Int32.TryParse(numberTwo, out validNum);
     }
 
     Console.Write("Okay we're almost done... give me an emotion: ");
     string emotion = Console.ReadLine();
     canParse = Int32.TryParse(emotion, out validNum);
-    if(canParse == true)
+    while(canParse == true)
     {
-        Console.WriteLine("INVALID ENTRY. Try again:");
+        Console.WriteLine("INVALID ENTRY. I asked for an emotion:");
         emotion = Console.ReadLine();
+        canParse = Int32.TryParse(emotion, out validNum);
     }
 
     Console.Write("Okay last one! Let's end it with another number: ");
     string numberThree = Console.ReadLine();
     canParse = Int32.TryParse(numberThree, out validNum);
-    if(canParse == false)
+    while(canParse == false)
     {
         Console.WriteLine("INVALID ENTRY. Use a number:");
         numberThree = Console.ReadLine();
+        canParse = Int32.TryParse(numberThree, out validNum);
     }
 
 
@@ -127,7 +138,7 @@ while (playAgain == true)
     Console.WriteLine("------------------------------------------------------------\n");
     Console.WriteLine("Wasn't that a bunch of fun?! Do you wanna play again? (YES/NO)");
     string lastInput = Console.ReadLine().ToUpper();
-    if (lastInput != "YES" && lastInput != "NO")
+    while (lastInput != "YES" && lastInput != "NO")
     {
         Console.WriteLine("INVALID ENTRY! PLEASE CHOOSE YES OR NO.");
         lastInput = Console.ReadLine().ToUpper();
